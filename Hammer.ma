@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Hammer.ma
-//Last modified: Wed, Sep 07, 2022 11:26:53 PM
+//Last modified: Wed, Sep 07, 2022 11:30:47 PM
 //Codeset: 1252
 requires maya "2023";
 requires "stereoCamera" "10.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202205052215-234554116d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22000)";
-fileInfo "UUID" "7BF06FE1-4040-F7A0-4275-06BF2A1C22AD";
+fileInfo "UUID" "B73DD920-4351-7C97-2C20-F59FC6046ECA";
 createNode transform -s -n "persp";
 	rename -uid "A1A3C018-4889-684B-5A6E-498F06DBAC33";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.2754647373841461 11.283960205229899 -20.960499255477568 ;
-	setAttr ".r" -type "double3" -15.938352729616113 173.39999999999185 0 ;
+	setAttr ".t" -type "double3" -4.7792640960255861 9.9771919361101649 -20.331818538923709 ;
+	setAttr ".r" -type "double3" -12.338352729614911 198.59999999998919 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "483A9C82-436C-969C-AAD9-A09FF7BA3863";
 	setAttr -k off ".v" no;

@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: 1st chair.ma
-//Last modified: Wed, Sep 07, 2022 11:26:45 PM
+//Last modified: Wed, Sep 07, 2022 11:31:25 PM
 //Codeset: 1252
 requires maya "2023";
 requires "stereoCamera" "10.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202205052215-234554116d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22000)";
-fileInfo "UUID" "89E253D1-42CD-D816-9717-FD9FAF3D1CE7";
+fileInfo "UUID" "145FE32F-4A61-2105-ED37-788241901BC0";
 createNode transform -s -n "persp";
 	rename -uid "C0E42830-4CB9-51B4-D7F1-B0A9BEB54E8F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -18.090995044306833 5.2485275227311448 41.458818933678131 ;
-	setAttr ".r" -type "double3" 5.0616472703938955 336.99999999992696 -2.1595178650717229e-16 ;
+	setAttr ".t" -type "double3" -4.7834205854485106 16.35113605167103 44.669583949904421 ;
+	setAttr ".r" -type "double3" -8.1383527296060691 353.39999999992602 2.0011084909435147e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "44E82567-4FC7-3855-9882-CDA8EE210CC4";
 	setAttr -k off ".v" no;
@@ -385,22 +385,22 @@ createNode mesh -n "pCubeShape10" -p "pCube10";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "155C267D-4315-F30E-7137-08B0B6BC3D73";
+	rename -uid "39EC04F0-473C-5564-AA11-0D87A745707F";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DD3F8727-42C2-B599-0006-D6B0541175DD";
+	rename -uid "61DD1B40-4BFC-5DC6-E7E5-468197DA76EE";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E329E073-4281-057B-3776-C2A5945A92FC";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5A702BE7-448C-D6D9-0543-1FAA15E4F6B7";
+	rename -uid "7F314E4E-4F8D-B7E8-E361-A8A9FFF8A746";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "C088723D-4281-E8AE-782B-C2943038BB52";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "F9B4B0E3-498A-C272-7841-9E847588A062";
+	rename -uid "B996B103-497F-F8DD-575D-49B3D6DBCE59";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8E1EF539-45D3-2A07-7745-C88DE21555A4";
+	rename -uid "3F3D1F9D-4483-53AF-5B00-0B884DB00C37";
 createNode polyCube -n "polyCube1";
 	rename -uid "6A3249C9-4F0E-05AE-3106-A28DB229856F";
 	setAttr ".cuv" 4;
