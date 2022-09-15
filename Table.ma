@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Table.ma
-//Last modified: Fri, Sep 09, 2022 10:15:36 PM
+//Last modified: Fri, Sep 09, 2022 10:44:48 PM
 //Codeset: 1252
 requires maya "2023";
 requires "mtoa" "5.1.2";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202205052215-234554116d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22000)";
-fileInfo "UUID" "68BC81C3-41B4-3D4D-7555-5D9D152D6DF2";
+fileInfo "UUID" "E40408E3-4631-938F-77F3-298EFEAE8FE8";
 createNode transform -s -n "persp";
 	rename -uid "9B8921CD-4EF7-2525-0C50-8885E1D1A71D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.332730967092054 5.6683410419793256 -2.6793189055681021 ;
-	setAttr ".r" -type "double3" -14.138352729573681 457.3999999999869 0 ;
+	setAttr ".t" -type "double3" 18.017552507581183 9.338460609827818 -18.607085900210905 ;
+	setAttr ".r" -type "double3" -20.138352729559468 495.79999999997932 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "35AF2C9E-4EA6-0A60-2D07-5AB11E5F0311";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 22.243962508830119;
+	setAttr ".coi" 27.565027113708034;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -218,22 +218,22 @@ createNode mesh -n "pCubeShape6" -p "pCube6";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "B65D8393-47FE-1D76-273D-E1B90B70CD83";
+	rename -uid "B1ABC9D4-4473-60C2-3B7D-D9B1E91DC155";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C0562036-4F12-48CA-9353-769264B8D83D";
+	rename -uid "87247948-4F41-89DD-EA0E-21BFDD6D915D";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "18801BD6-4812-F1E8-4E72-1C805DC345B6";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "1C1B9B07-4DC9-E112-A19B-5690A2EFF7A9";
+	rename -uid "828070E2-4216-902D-87CE-BBB4A7B26BE4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "67B38501-4158-49E9-E56E-4DA7AEEAC7BF";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "1E836771-4688-C102-6D50-409F4C155594";
+	rename -uid "7C351AD6-4C5B-5D37-83BB-C4BA8BD7F6DF";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6B32D3B7-477A-5433-7741-69916737D117";
+	rename -uid "22546D1B-445F-C1A7-80C7-BAB55FED3BF0";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "3557937A-4106-9EFC-412F-86B9E9AA05F6";
 	setAttr ".b" -type "string" (
