@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: BoolStart.ma
-//Last modified: Mon, Oct 31, 2022 12:21:36 PM
+//Last modified: Mon, Oct 31, 2022 12:22:18 PM
 //Codeset: 1252
 requires maya "2023";
 requires "mtoa" "5.1.2";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202205052215-234554116d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22000)";
-fileInfo "UUID" "533A4135-40A6-68FB-2A0D-91A436194D1F";
+fileInfo "UUID" "E1D0F92A-4D18-BB78-DA9E-DE9E2135079C";
 createNode transform -s -n "persp";
 	rename -uid "2F96C5CC-CF48-3364-978F-BF80661D753F";
 	setAttr ".v" no;
